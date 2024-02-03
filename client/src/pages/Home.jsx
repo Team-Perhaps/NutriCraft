@@ -3,9 +3,15 @@ import Box from '../components/Box';
 import girlicon from '../assets/girlicon.png';
 import girlfood from '../assets/girl_food.jpeg';
 import boy_exercise from '../assets/boy_exercise.avif';
+import Navbar from '../components/Navbar';
 
 const Home = () => {
   return (
+    <>
+    <div>
+      <Navbar />
+    </div>
+    
     <div className="home">
       <Box
         page="Meal.jsx"
@@ -29,6 +35,7 @@ const Home = () => {
         description="View your health and fitness statistics."
       />
     </div>
+    </>
   );
 };
 
