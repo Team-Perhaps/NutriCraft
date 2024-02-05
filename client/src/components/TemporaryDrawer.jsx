@@ -103,6 +103,7 @@ function SwipeableEdgeDrawer(props) {
       <div className='flex flex-col align-center justify-center image-show'>
         {/* //add image here */}
         <img src={props.image} style={{"height":"350px", "margin": "auto", "marginTop":"2em"}}/>
+        <h1>{recipe.name}</h1>
         <Button onClick={()=>updateTotalCalories(user.uid, parseFloat(recipe.calories), parseFloat(recipe.protein), parseFloat(recipe.sugar), parseFloat(recipe.carbs), parseFloat(recipe.fat), parseFloat(recipe.sodium))}>Eat</Button>
         
       </div>
