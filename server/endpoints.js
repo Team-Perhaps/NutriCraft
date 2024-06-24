@@ -15,7 +15,7 @@ const geminiConfig = {
 };
  
 const geminiModel = googleAI.getGenerativeModel({
-  model: "gemini-pro-vision",
+  model: "gemini-1.5-pro",
   geminiConfig,
 });
 
@@ -23,7 +23,7 @@ const generationConfig = {
   temperature: 0,
 };
 
-const model = googleAI.getGenerativeModel({ model: "gemini-pro",  generationConfig });
+const model = googleAI.getGenerativeModel({ model: "gemini-1.5-pro",  generationConfig });
 
 const generateIngredients = async (b64) => {
     try {
