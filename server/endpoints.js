@@ -215,6 +215,9 @@ async function generateRecipe(dietRestrictions, ingredients, cooking_time, peopl
        res.status(500).send('An error occurred while generating the food');
     }
    });
+app.get('/', (req, res) => {
+  res.send('Hello, World!');
+});
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
